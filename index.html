@@ -23,27 +23,33 @@
     <div class="navbar-fixed">
       <nav class="white" role="navigation">
         <div class="nav-wrapper container">
-          <a id="logo-container" href="#" class="brand-logo"><img src="assets/img/no-slides-conf.png" style="height:60px"></a>
+          <a href="#" class="brand-logo">
+            <img src="assets/img/no-slides-conf.png">
+          </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
             <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#info">Info</a></li>
           </ul>
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
             <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li>
             <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#speakers">Speakers</a></li>
+            <li><a href="#sponsors">Sponsors</a></li>
+            <li><a href="#info">Info</a></li>
           </ul>
-          <a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="material-icons">menu</i></a>
+          <a href="#" data-activates="nav-mobile" class="button-collapse blue-text">
+            <i class="material-icons">menu</i>
+          </a>
         </div>
       </nav>
     </div>
 
-    <div id="index-banner" class="parallax-container">
+    <div class="parallax-container" id="banner">
       <div class="section no-pad-bot">
         <div class="container">
           <h1 class="header center blue-text text-lighten-1">No Slides Conf</h1>
@@ -63,7 +69,7 @@
       <div class="parallax"><img src="assets/img/main.jpg" alt="Unsplashed background img 1"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="why">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
@@ -80,7 +86,7 @@
       </div>
     </div>
 
-    <div class="parallax-container valign-wrapper" id="schedule">
+    <div class="parallax-container valign-wrapper" id="what">
       <div class="container">
         <div class="section">
           <div class="row">
@@ -100,7 +106,7 @@
       <div class="parallax"><img src="assets/img/background1.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="schedule">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
@@ -120,7 +126,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="tickets">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
@@ -132,7 +138,7 @@
       </div>
     </div>
 
-    <div class="parallax-container valign-wrapper" id="schedule">
+    <div class="parallax-container valign-wrapper" id="speakers">
       <div class="container">
         <div class="section">
           <div class="row">
@@ -151,75 +157,85 @@
       <div class="parallax"><img src="assets/img/background2.jpg" alt="Unsplashed background img 2"></div>
     </div>
 
-    <div class="container">
+    <div class="container" id="sponsors">
       <div class="section">
         <div class="row">
           <div class="col s12 center">
             <h3><i class="material-icons">work</i></h3>
             <h4>Sponsors</h4>
-          </div>
-        </div>
-
-        <div class="row center">
-          <div class="col s12 m4 center">
-            <a href="http://www.coders51.com/" target="blank"><img src="assets/img/sponsors/logo_coders51.png" alt="Coders51 Logo" /><a>
-          </div>
-          <div class="col s12 m4 offset-m4 center">
-            <a href="http://www.biodec.com/" target="blank"><img src="assets/img/sponsors/logo_biodec.png" alt="Biodec Logo" /></a>
-          </div>
-        </div>
-
-        <div class="row center">
-          <div class="col s12 m4 offset-m4 center">
             <p>
               If you are interested in sponsoring the conference just send an email to
               <b><a class="blue-text" href="mailto:thewildbunch@noslidesconf.net">the wild bunch</a></b>
             </p>
           </div>
         </div>
+
+        <div class="row center">
+          <ul class="list-inline">
+            <li class="sponsor">
+              <a href="http://www.biodec.com" target="_blank">
+                <img src="assets/img/sponsors/biodec.png" title="BioDec" alt="BioDec">
+              </a>
+            </li>
+            <li class="sponsor">
+              <a href="http://www.coders51.com" target="_blank">
+                <img src="assets/img/sponsors/coders51.png" title="coders51" alt="coders51">
+              </a>
+            </li>
+            <li class="sponsor">
+              <a href="http://www.coderstug.org" target="_blank">
+                <img src="assets/img/sponsors/coderstug.png" title="Coders TUG" alt="Coders TUG">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <footer class="page-footer black" id="contacts">
+    <footer class="page-footer black" id="info">
       <div class="container">
         <div class="section">
           <div class="row">
-            <div class="col s12 m4 center grey-text text-lighten-4">
-              <h3><i class="material-icons">face</i></h3>
-              <h4>Staff</h4>
-            </div>
-            <div class="col s12 m4 offset-m4 center grey-text text-lighten-4">
-              <h3><i class="material-icons">thumb_up</i></h3>
-              <h4>Code of conduct</h4>
+            <div class="col s12 m12 center grey-text text-lighten-4">
+              <h3><i class="material-icons">info</i></h3>
+              <h4>Info</h4>
             </div>
           </div>
-          <div class="row center">
-            <div class="col s12 m4 grey-text text-lighten-4">
-              <p>This event is organized by a wild bunch of people tired of conferences entirely based on slides and buzzwords</p>
-              <p>
-                <div>Their true identity will be revealed sooner or later...</div>
-                <div>in the meanwhile you can send them an e-mail:</div>
-              </p>
-              <p>
-                <div><a class="grey-text text-lighten-4" href="mailto:pike@noslidesconf.net">Pike Bishop</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:thornton@noslidesconf.net">Deke Thornton</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:dutch@noslidesconf.net">Dutch Engstrom</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:lylegorch@noslidesconf.net">Lyle Gorch</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:tectorgorch@noslidesconf.net">Tector Gorch</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:angel@noslidesconf.net">Angel</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:sykes@noslidesconf.net">Freddie Sykes</a></div>
-                <div><a class="grey-text text-lighten-4" href="mailto:genmapache@noslidesconf.net">General Mapache</a></div>
-              </p>
-            </div>
-            <div class="col s12 m4 offset-m4 grey-text text-lighten-4">
-              <p>
-                This conference is dedicated to providing a harassment-free conference experience for everyone,
-                regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion.
-                We do not tolerate harassment of conference participants in any form.
-                Sexual language and imagery is not appropriate for any conference venue, including talks.
-                Conference participants violating these rules may be sanctioned or expelled from the conference without
-                a refund at the discretion of the conference organizers
-              </p>
+          <div class="row">
+            <div class="col s12 m8 offset-m2 grey-text text-lighten-4">
+              <div class="row">
+                <h5>Staff</h5>
+                <div>
+                  <p>This event is organized by a wild bunch of people tired of conferences entirely based on slides and buzzwords</p>
+                  <p>
+                    <div>Their true identity will be revealed sooner or later...</div>
+                    <div>in the meanwhile you can send them an e-mail:</div>
+                  </p>
+                  <p>
+                    <div><a class="grey-text text-lighten-4" href="mailto:pike@noslidesconf.net">Pike Bishop</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:thornton@noslidesconf.net">Deke Thornton</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:dutch@noslidesconf.net">Dutch Engstrom</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:lylegorch@noslidesconf.net">Lyle Gorch</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:tectorgorch@noslidesconf.net">Tector Gorch</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:angel@noslidesconf.net">Angel</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:sykes@noslidesconf.net">Freddie Sykes</a></div>
+                    <div><a class="grey-text text-lighten-4" href="mailto:genmapache@noslidesconf.net">General Mapache</a></div>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <h5>Code of conduct</h5>
+                <div>
+                  <p>
+                    This conference is dedicated to providing a harassment-free conference experience for everyone,
+                    regardless of gender, sexual orientation, disability, physical appearance, body size, race, or religion.
+                    We do not tolerate harassment of conference participants in any form.
+                    Sexual language and imagery is not appropriate for any conference venue, including talks.
+                    Conference participants violating these rules may be sanctioned or expelled from the conference without
+                    a refund at the discretion of the conference organizers
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
