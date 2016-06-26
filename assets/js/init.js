@@ -1,8 +1,8 @@
 (function($){
-  $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
+    $(function(){
+        var collapseButton = $('.button-collapse');
+        collapseButton.sideNav();
+        $('.remove-sideNav').click(function () { collapseButton.sideNav('hide'); });
+        $('.parallax').parallax();
+    });
+})(jQuery);

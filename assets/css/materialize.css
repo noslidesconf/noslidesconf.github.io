@@ -7461,12 +7461,13 @@ nav .input-field label.active {
 
 .navbar-fixed {
   position: relative;
-  height: 56px;
+  height: 80px;
   z-index: 998;
 }
 
 .navbar-fixed nav {
   position: fixed;
+  height: 80px;
 }
 
 @media only screen and (min-width: 601px) {
@@ -7553,12 +7554,13 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 h1 {
-  font-size: 4.2rem;
+  font-size: 3.5rem;
   line-height: 110%;
   margin: 2.1rem 0 1.68rem 0;
 }
 
 h2 {
+  font-size: 3.2rem;
   line-height: 110%;
   margin: 1.78rem 0 1.424rem 0;
 }
@@ -9797,7 +9799,6 @@ select {
 .side-nav li {
   float: none;
   padding: 0 15px;
-  line-height: 64px;
 }
 
 .side-nav li:hover, .side-nav li.active {
@@ -9808,8 +9809,8 @@ select {
   color: #444;
   display: block;
   font-size: 1rem;
-  height: 64px;
-  line-height: 64px;
+  height: 80px;
+  line-height: 80px;
   padding: 0 15px;
 }
 
