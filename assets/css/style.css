@@ -205,3 +205,34 @@ span.fa {
     width: 45%;
   }
 }
+
+.list-inline li.sponsor:after {
+   position: relative;
+   top: 20px;
+   color:white;
+   text-align:center;
+   padding: 4px 8px;
+   font-weight: bold;
+   font-size: 0.8em;
+   font-family: Verdana;
+}
+
+.list-inline li.sponsor.diamond:after {
+   content: "DIAMOND SPONSOR";
+   background: #0ABAE9;
+}
+
+.list-inline li.sponsor.ruby:after {
+   content: "RUBY SPONSOR";
+   background: #CC342D;
+}
+
+.list-inline li.sponsor.emerald:after {
+   content: "EMERALD SPONSOR";
+   background: #5B9C64;
+}
+
+.list-inline li.sponsor.sapphire:after {
+   content: "SAPPHIRE SPONSOR";
+   background: #0F52BA;
+}
