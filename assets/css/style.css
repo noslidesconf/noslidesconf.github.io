@@ -217,6 +217,11 @@ span.fa {
    font-family: Verdana;
 }
 
+.list-inline li.sponsor.taaffeite:after {
+   content: "TAAFFEITE SPONSOR";
+   background: #995588;
+}
+
 .list-inline li.sponsor.diamond:after {
    content: "DIAMOND SPONSOR";
    background: #0ABAE9;
