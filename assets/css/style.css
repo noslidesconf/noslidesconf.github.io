@@ -179,12 +179,12 @@ span.fa {
   margin: 60px 0 10px 0;
 }
 
-.list-inline li.sponsor {
+.sponsorship-logos li.sponsor {
   width: 30%;
   padding: 2%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
 }
-  .list-inline li.sponsor a {
+  .sponsorship-logos li.sponsor a {
     display: inline-block;
   }
 
@@ -201,43 +201,104 @@ span.fa {
     max-width: 250%;
   }
 
-  .list-inline li.sponsor {
+  .sponsorship-logos li.sponsor {
     width: 45%;
   }
 }
 
-.list-inline li.sponsor:after {
-   position: relative;
-   top: 20px;
-   color:white;
-   text-align:center;
-   padding: 4px 8px;
-   font-weight: bold;
-   font-size: 0.8em;
-   font-family: Verdana;
+.sponsorship-packages .sponsor {
+  position: relative;
+  padding: 10px;
+  color: black;
 }
 
-.list-inline li.sponsor.taaffeite:after {
-   content: "TAAFFEITE SPONSOR";
-   background: #995588;
+.sponsorship-logos .sponsor:after,
+.sponsorship-packages .sponsor:before {
+  position: relative;
+  color:white;
+  text-align:center;
+  padding: 4px 8px;
+  font-weight: bold;
+  font-size: 0.8em;
+  font-family: Verdana;
 }
 
-.list-inline li.sponsor.diamond:after {
-   content: "DIAMOND SPONSOR";
-   background: #0ABAE9;
+.sponsorship-logos .sponsor:after {
+  top: 40px;
 }
 
-.list-inline li.sponsor.ruby:after {
-   content: "RUBY SPONSOR";
-   background: #CC342D;
+.sponsorship-packages .sponsor:before {
+  position: absolute;
+  left: 5px;
+  top: 30px;
+  border-radius: 3px;
+  z-index: 1;
 }
 
-.list-inline li.sponsor.emerald:after {
-   content: "EMERALD SPONSOR";
-   background: #5B9C64;
+.sponsorship-logos .sponsor.taaffeite:after,
+.sponsorship-packages .sponsor.taaffeite:before {
+  content: "TAAFFEITE SPONSOR";
+  background: #995588;
 }
 
-.list-inline li.sponsor.sapphire:after {
-   content: "SAPPHIRE SPONSOR";
-   background: #0F52BA;
+.sponsorship-logos .sponsor.diamond:after,
+.sponsorship-packages .sponsor.diamond:before {
+  content: "DIAMOND SPONSOR";
+  background: #0ABAE9;
+}
+
+.sponsorship-logos .sponsor.ruby:after,
+.sponsorship-packages .sponsor.ruby:before {
+  content: "RUBY SPONSOR";
+  background: #CC342D;
+}
+
+.sponsorship-logos .sponsor.emerald:after,
+.sponsorship-packages .sponsor.emerald:before {
+  content: "EMERALD SPONSOR";
+  background: #5B9C64;
+}
+
+.sponsorship-logos .sponsor.sapphire:after,
+.sponsorship-packages .sponsor.sapphire:before {
+  content: "SAPPHIRE SPONSOR";
+  background: #0F52BA;
+}
+
+.sponsorship-logos .sponsor.amethyst:after,
+.sponsorship-packages .sponsor.amethyst:before {
+  content: "AMETHYST SPONSOR";
+  background: #9C8AA5;
+}
+
+.sponsorship-packages .sponsor .details {
+  position: relative;   
+  background: #f0eff0;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 15px 30px;
+}
+
+.sponsorship-packages .sponsor .details .header {
+  position: relative;
+  text-align: right;
+  right: 5px;
+}
+
+.sponsorship-packages .sponsor .details .header .amount {
+  font-size: x-large;
+}
+
+.sponsorship-packages .sponsor .details .header .vat {
+  font-size: large;
+}
+
+.sponsorship-packages .sponsor .details .header .slots {
+  font-size: initial;
+}
+
+.sponsorship-packages .sponsor .details ul li {
+  background: url(../img/sponsors/list-bullet.png) no-repeat left;
+  padding-left: 50px;
+  margin: 5px 0 10px 15px;
 }

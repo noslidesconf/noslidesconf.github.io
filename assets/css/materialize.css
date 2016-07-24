@@ -6649,16 +6649,34 @@ nav ul a span.badge {
 .container {
   margin: 0 auto;
   max-width: 1280px;
-  width: 90%;
+  width: 95%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .container {
     width: 85%;
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .container {
     width: 70%;
   }
@@ -6931,7 +6949,7 @@ nav ul a span.badge {
   left: 100%;
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 701px) {
   .row .col.m1 {
     width: 8.3333333333%;
     margin-left: auto;
@@ -7114,7 +7132,7 @@ nav ul a span.badge {
   }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1550px) {
   .row .col.l1 {
     width: 8.3333333333%;
     margin-left: auto;
