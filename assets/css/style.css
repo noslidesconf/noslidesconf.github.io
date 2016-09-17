@@ -176,7 +176,19 @@ span.fa {
   }
 
 .ebrite {
-  margin: 60px 0 10px 0;
+  margin: 65px 0 0 0;
+}
+
+.ebrite .btn-large {
+  margin-bottom: 60px;
+  display: none;
+}
+
+.ebrite .frame {
+  border: 0;
+  width: 90%;
+  height: 300px;
+  margin: 0;
 }
 
 .sponsorship-logos li.sponsor {
@@ -199,6 +211,14 @@ span.fa {
 
   #banner .parallax img {
     max-width: 250%;
+  }
+
+  .ebrite .btn-large {
+    display: block;
+  }
+
+  .ebrite .frame {
+    display: none;
   }
 
   .sponsorship-logos li.sponsor {
