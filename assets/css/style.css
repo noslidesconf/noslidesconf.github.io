@@ -1,25 +1,20 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
 .row .text {
   font-size: 1.3em;
   font-stretch: expanded;
 }
-  #banner h1 {
-    font-size: 4.2em;
-  }
-  #banner .row .text {
-    font-size: 1.6em;
-  }
-  footer .row .text {
-    font-size: 1.25em;
-    margin-left: 7px;
-  }
+
+#banner h1 {
+  font-size: 4.2em;
+}
+
+#banner .row .text {
+  font-size: 1.6em;
+}
+
+footer .row .text {
+  font-size: 1.25em;
+  margin-left: 7px;
+}
 
 .material-icons {
   font-size: 35px;
@@ -44,30 +39,16 @@ p {
   min-height: 300px;
   line-height: 0;
   height: auto;
-  background-color:rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.7);
   color: rgba(255,255,255,.9);
 }
-  .parallax-container#banner {
-    min-height: 580px;
-  }
-  .parallax-container .section {
-    width: 100%;
-  }
 
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #banner .section {
-    top: 10%;
-  }
+.parallax-container#banner {
+  min-height: 580px;
 }
 
-@media only screen and (max-width : 600px) {
-  #banner .section {
-    top: 0;
-  }
+.parallax-container .section {
+  width: 100%;
 }
 
 .icon-block {
@@ -120,16 +101,6 @@ footer.page-footer {
   background-color: rgba(0,0,0,0.65);
 }
 
-@media only screen and (max-width: 992px){
-  .parallax-container .section{
-    position: relative;
-    top: inherit;
-  }
-  #banner h1.header{
-    font-size: 4em;
-  }
-}
-
 .list-inline {
   padding-left: 0;
   list-style: none;
@@ -141,39 +112,43 @@ footer.page-footer {
   padding-left: 20px;
 }
 
-.social {
-    padding-top: 50px;
+#banner .social {
+  padding-top: 50px;
 }
 
-.social > li a {
+#banner .social > li a {
   color: #fff;
 }
-  .social > li a:Hover, .social > li a.active {
-    color: #2da9ff;
-    text-decoration: none;
-  }
+
+#banner .social > li a:hover,
+#banner .social > li a.active {
+  color: #2da9ff;
+  text-decoration: none;
+}
 
 span.fa {
-    display: inline-block;
-    font-size: 35px;
+  display: inline-block;
+  font-size: 35px;
 }
 
-.evtsiteico, .evtsiteico:hover {
-    display: inline-block;
-    width: 32.5px;
-    height: 35px;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-.lanyrd {
-  background: url('../img/icons/lanyrd-blue.png') no-repeat;
+.evtsiteico,
+.evtsiteico:hover {
+  display: inline-block;
+  width: 32.5px;
+  height: 35px;
+  background-repeat: no-repeat;
+  overflow: hidden;
   background-size: 25px;
-  background-position: 0 8px;
+  background-position: 0 10px;
 }
-  .lanyrd:hover {
-    background: url('../img/icons/lanyrd-white.png') no-repeat;
-  }
+
+.evtsiteico.lanyrd {
+  background-image: url('../img/misc/lanyrd-white.png');
+}
+
+.evtsiteico.lanyrd:hover {
+  background-image: url('../img/misc/lanyrd-blue.png');
+}
 
 .ebrite {
   margin: 65px 0 0 0;
@@ -191,6 +166,245 @@ span.fa {
   margin: 0;
 }
 
+#halls {
+  padding: 0;
+}
+
+#halls .hall-wrapper {
+  padding: 10px;
+}
+
+.hall {
+  padding: 10px;
+  background: #efefef;
+}
+
+.hall.selected,
+.hall:hover,
+.hall:active {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #ffffff;
+  background: rgba(20, 125, 180, 0.8);
+}
+
+.hall h4 {
+  font-size: 28px;
+}
+
+.hall h5 {
+  font-size: 18px;
+}
+
+.hall h4,
+.hall h5 {
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#hallSessionLists {
+  padding: 0;
+}
+
+#hallSessionLists .hallSessionList {
+  display: table;
+  width: 100%;
+  border-spacing: 10px 5px;
+  padding: 0;
+}
+
+.session {
+  display: table-row;
+}
+
+.session .symbol {
+  width: 16%;
+  padding: 15px 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: #ffffff;
+  background: rgba(20, 125, 180, 0.8)
+}
+
+.session .symbol i {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.session .symbol .time {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.session .description {
+  font-family: 'Verdana';
+  padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  background: #f0eff0;
+}
+
+.session .description h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 23px;
+  font-weight: 500;
+  color: #2090d0
+}
+
+.session .description h3.language-flag:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 18px;
+  background-size: 30px 18px;
+  margin-right: 10px;
+}
+
+.session .description h3.language-flag.ita:before {
+  background-image: url(/assets/img/misc/flag-ita.png);
+}
+
+.session .description h3.language-flag.eng:before {
+  background-image: url(/assets/img/misc/flag-eng.png);
+}
+
+.session .description .abstract {
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.session .description ul {
+  padding: 0 25px;
+  margin: 3px 0 0 5px;
+  list-style: initial;
+}
+
+.session .description li {
+  padding: 0 10px;
+  list-style-type: disc;
+}
+
+.session .description .speaker-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.session .description .speaker-name-surname {
+  font-size: 14px;
+}
+
+.speakers {
+  margin-top: 65px;
+}
+
+.speaker {
+  position: relative;
+}
+
+.speaker .picture {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  display: table;
+  margin: auto;
+}
+
+.speaker .picture img {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.speaker .picture .details {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: rgba(20, 125, 180, 0.8);
+  font-size: 16px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  opacity: 0;
+}
+
+.speaker:hover .picture .details {
+  opacity: 1;
+}
+
+.speaker .picture .details p {
+  color: #fff;
+  padding: 20px 40px;
+  position: absolute;
+  top: -100px;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.speaker:hover .picture .details p {
+  transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  -webkit-transform: translateY(100px);
+}
+
+.speaker .picture .details .social {
+  position: relative;
+  top: 430px;
+  left: 0px;
+  font-size: 26px;
+  padding: 0;
+  font-weight: 300;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+}
+
+.speaker:hover .picture .details .social {
+  transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+}
+
+.speaker .picture .details .social a {
+  color: #fff;
+}
+
+.speaker .picture .details .social ul {
+  display: table;
+  margin: auto;
+}
+
+.speaker .picture .details .social ul li {
+  float: left;
+  padding: 0 13px;
+}
+
+.speaker .caption {
+  margin: 10px 0 40px 12px;
+}
+
+.speaker .caption h4 {
+  font-size: 25px;
+  margin: 10px 0 8px 0;
+}
+
+.speaker .caption h5 {
+  font-size: 13px;
+  margin: 0;
+}
+
 .sponsorship-logos li.sponsor {
   width: 30%;
   padding: 2%;
@@ -204,32 +418,6 @@ span.fa {
   margin-top: 55px;
 }
 
-@media only screen and (max-width: 700px) {
-  .parallax img {
-    max-width: 200%;
-  }
-
-  #banner .parallax img {
-    max-width: 250%;
-  }
-
-  .ebrite .btn-large {
-    display: block;
-  }
-
-  .ebrite .frame {
-    display: none;
-  }
-
-  .sponsorship-logos li.sponsor {
-    width: 45%;
-  }
-
-  #canvas-map {
-    display: none;
-  }
-}
-
 .sponsorship-packages .sponsor {
   position: relative;
   padding: 10px;
@@ -239,8 +427,8 @@ span.fa {
 .sponsorship-logos .sponsor:after,
 .sponsorship-packages .sponsor:before {
   position: relative;
-  color:white;
-  text-align:center;
+  color: white;
+  text-align: center;
   padding: 4px 8px;
   font-weight: bold;
   font-size: 0.8em;
@@ -344,6 +532,88 @@ span.fa {
 
 .location { position: relative; background: #fff; z-index: 1; }
 .location h3 { margin-left: 3%; }
-.location ul { list-style:none; padding-left: 10px; }
-.location li { margin:25px 0px; font-size: 12pt;}
+.location ul { list-style: none; padding-left: 10px; }
+.location li { margin: 25px 0px; font-size: 12pt;}
 .location li  i { padding-right: 15px; font-size: 12pt;}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: relative;
+    top: inherit;
+  }
+
+  #banner .section {
+    top: 10%;
+  }
+
+  #banner h1.header{
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .parallax img {
+    max-width: 200%;
+  }
+
+  #banner .parallax img {
+    max-width: 250%;
+  }
+
+  .ebrite .btn-large {
+    display: block;
+  }
+
+  .ebrite .frame {
+    display: none;
+  }
+
+  .speaker .picture img {
+    position: relative;
+  }
+
+  .speaker .picture .details {
+    position: relative;
+    top: -6px;
+    opacity: 1;
+  }
+
+  .speaker .picture .details p {
+    top: 0;
+  }
+
+  .speaker:hover .picture .details p {
+    transform: inherit;
+    -ms-transform: inherit;
+    -webkit-transform: inherit;
+  }
+
+  .speaker .picture .details .social {
+    top: 330px;
+  }
+
+  .speaker:hover .picture .details .social {
+    transform: inherit;
+    -ms-transform: inherit;
+    -webkit-transform: inherit;
+  }
+
+  .sponsorship-logos li.sponsor {
+    width: 45%;
+  }
+
+  #canvas-map {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #banner .section {
+    top: 0;
+  }
+
+  nav a.button-collapse i {
+    height: 80px;
+    line-height: 80px;
+  }
+}

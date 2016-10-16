@@ -17,13 +17,13 @@
     <meta property="og:description" content="Just hands-on sessions">
     <meta property="og:url" content="http://www.noslidesconf.net">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="http://www.noslidesconf.net/assets/img/social.jpg" />
+    <meta property="og:image" content="http://www.noslidesconf.net/assets/img/misc/social.jpg" />
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="NoSlidesConf">
     <meta name="twitter:description" content="Just hands-on sessions">
     <meta name="twitter:url" content="http://www.noslidesconf.net">
-    <meta name="twitter:image:src" content="http://www.noslidesconf.net/assets/img/social.jpg">
+    <meta name="twitter:image:src" content="http://www.noslidesconf.net/assets/img/misc/social.jpg">
 
     <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-touch-icon-57x57.png">
@@ -48,19 +48,19 @@
 
     <title>NoSlidesConf - Just hands-on sessions</title>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" type="text/css" rel="stylesheet">
 
-    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-    <link href="assets/css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="assets/css/timeline.css" type="text/css" rel="stylesheet" media="screen,projection">
   </head>
   <body>
     <div class="navbar-fixed">
       <nav class="white remove-sideNav" role="navigation">
         <div class="nav-wrapper container">
           <a href="index.html" class="brand-logo">
-            <img src="assets/img/logo.png">
+            <img src="assets/img/misc/logo.png">
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
@@ -103,11 +103,9 @@
           </div>
           <div class="row center">
             <ul class="list-inline social">
-              <!--
               <li>
                 <a href="http://lanyrd.com/2016/noslidesconf" target="_blank"><span class="evtsiteico lanyrd">&nbsp;</span></a>
               </li>
-              -->
               <li>
                 <a href="http://twitter.com/noslidesconf" target="_blank"><span class="fa fa-twitter"></span></a>
               </li>
@@ -132,7 +130,7 @@
             <p>Sharing something that can only be learned by experience is way more effective when practical examples are involved!</p>
             <p>
               <span class="blue-text">NoSlidesConf</span> is about step-by-step technical sessions showing how to get code up and running:
-              45-minute demos or workshops with live changes to code and configuration
+              45-minute demos with live changes to code and configuration
             </p>
           </div>
         </div>
@@ -157,16 +155,443 @@
 
     <div class="container">
       <div class="section">
-        <div class="row center">
-          <div class="col s12 m4 offset-m4 text">
-            <p>
-              <b class="red-text">The CFP closes on 30 September 2016</b>
-            </p>
-            <p>
-              No matter what tool or device you are using, just
-              send your proposal to <b><a class="blue-text" href="mailto:thewildbunch@noslidesconf.net">the wild bunch</a></b>
-              and amaze everybody with your hands-on session!
-            </p>
+        <div id="halls" class="row">
+          <div class="col s6 hall-wrapper">
+            <div class="hall selected" data-session-list-selector="#hall01SessionList">
+              <h4>Starbuck hall</h4>
+            </div>
+          </div>
+          <div class="col s6 hall-wrapper">
+            <div class="hall" data-session-list-selector="#hall02SessionList">
+              <h4>AguaVerde hall</h4>
+            </div>
+          </div>
+        </div>
+        <div id="hallSessionLists" class="row">
+          <div id="hall01SessionList" class="col m12 l10 hallSessionList">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.30</span>
+              </div>
+              <div class="description">
+                <h3>Opening remarks</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.45</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Let us build a feature on Trivago</h3>
+                <div class="abstract">
+                  A feature implementation in the production codebase of one of the biggest metasearch engines worldwide.
+                  Trivago is a highly data driven company and this session will show how we implement an A/B test into
+                  our core product.
+                  The demo will show the lifecycle of a feature, from implementation, through testing, review and
+                  finally to deployment.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/reinartz.jpg" alt="Christoph Reinartz" />
+                <div class="speaker-name-surname">Christoph Reinartz</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">10.30</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">11.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Advanced search for your legacy application</h3>
+                <div class="abstract">
+                  How do you mix SQL and NoSQL worlds without starting a messy revolution?
+                  This live coding talk will show you how to add Elasticsearch to your legacy
+                  application without changing all your current development habits.
+                  Your application will suddenly have advanced search features, all
+                  without the need to write complex SQL code!
+                  David will start from a RestX, Hibernate and Postgresql/MySQL based
+                  application and will add a complete integration of Elasticsearch,
+                  all live from the stage during his presentation.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/pilato.jpg" alt="David Pilato" />
+                <div class="speaker-name-surname">David Pilato</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">12.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Predicting the future as a service with Azure ML</h3>
+                <div class="abstract">
+                  <div>
+                    Every day we are noticing that applications are becoming more intelligent.
+                    They can predict your online shopping preferences, movies you want to watch or interesting articles.
+                    Nowadays it's hard to imagine a successful business that is not making a profit from some data forecasts.
+                    Usually, any predictive analytics requires in-depth knowledge on machine learning.
+                    Companies need to think of hiring skilled staff able to build and manage complex models.
+                    This is the place when Azure Machine Learning Studio comes in.
+                    It offers low-cost, easy to use and managed environment for developers of all skills levels.
+                    During this session Barbara will provide information about the following topics:
+                  </div>
+                  <div>
+                    <ul>
+                      <li>creating an Azure ML experiment</li>
+                      <li>using variety of data manipulation techniques</li>
+                      <li>customising ML process by using R and Python modules</li>
+                      <li>publishing and consuming an endpoint for predictive analysis</li>
+                      <li>retraining the ML model</li>
+                    </ul>
+                  </div>
+                  <div>
+                    After this session, attendees will get to know basics of Azure ML Studio.
+                    They will be able to use a variety of data sources, create experiments
+                    and use the predictions in their systems.
+                    The presentation will provide them with the information on how to enrich
+                    their system by reasoning from data using proven and highly scalable ML
+                    technologies in an easy and low-cost way.
+                  </div>
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/fusinska.jpg" alt="Barbara Fusinska" />
+                <div class="speaker-name-surname">Barbara Fusinska</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-cutlery"></i>
+                <span class="time">12.45</span>
+              </div>
+              <div class="description">
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">14.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Understanding Git</h3>
+                <div class="abstract">
+                  If you understand the Git way of thinking, you can truly profit from it instead of fighting against it.
+                  And yet, most Git trainingst will teach you the commands, not the underlying model.
+                  Focus on the model, and you'll find that Git is simpler than you think.
+                  Here is how it works.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/perrotta.jpg" alt="Paolo Perrotta" />
+                <div class="speaker-name-surname">Paolo Perrotta</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">15.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Crowd-controlling a game with Elixir and Phoenix</h3>
+                <div class="abstract">
+                  In this demo, we're going to build a crowd-controlled game with Elixir and Phoenix.
+                  Elixir is a young and exciting language based on the battle-tested Erlang
+                  and Phoenix is an Elixir framework for the modern web.
+                  With these tools, we're gonna be able to create a fault-tolerant, scalable, real-time game
+                  that the audience will be able to control from their browser: everyone at the same time, of course!
+                  In the process (pun intended, you'll get it after the demo!), we're gonna learn the basics of
+                  Elixir and Erlang, get excited about how cool they are, have a look at Phoenix,
+                  and discuss more serious things that can be done with these technologies,
+                  such as making a ton of fault-tolerant, scalable, real-time money!
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/leopardi.jpg" alt="Andrea Leopardi" />
+                <div class="speaker-name-surname">Andrea Leopardi</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">15.45</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">16.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Predicting Titanic survivors with ML</h3>
+                <div class="abstract">
+                  <div>
+                  How to predict the Titanic survivors using machine learning techniques.
+                  This is a very well known problem in data science but it’s a great way to show how to approach
+                  these problems step-by-step using some sweet old Python.<br />
+                  We will:
+                  </div>
+                  <div>
+                    <ul>
+                      <li>download the Titanic dataset</li>
+                      <li>use pandas to load the data and run some basic stats on it</li>
+                      <li>use matplotlib to visualise the data in different ways and try to get an understanding of the data patterns</li>
+                      <li>use simple ML algorithms such as logistic regression and random forest classifiers</li>
+                      <li>use a simple neural network and compare its performance with the previous approaches</li>
+                    </ul>
+                  </div>
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/liu.jpg" alt="Ju Liu" />
+                <div class="speaker-name-surname">Ju Liu</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">17.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Geospatial graphs made easy with OrientDB</h3>
+                <div class="abstract">
+                  Modeling and querying persistent data structures can be tricky when they
+                  involve semi-structured data, complex relationships (with deep traversal)
+                  and physical information like geographical positions, areas, shapes and so on.
+                  Bad news is that almost all modern applications have to manage such kind of data.
+                  In this session we will see how to use OrientDB v2.2 Document-Graph engine and its
+                  new Geospatial Indexes to efficiently manage and query connected, spatial information. 
+                  Of course we will also display these data on an Angular2+GoogleMaps front-end.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/dellaquila.jpg" alt="Luigi Dell'Aquila" />
+                <div class="speaker-name-surname">Luigi Dell'Aquila</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">18.00</span>
+              </div>
+              <div class="description">
+                <h3>Closing remarks</h3>
+              </div>
+            </div>
+          </div>
+          <div id="hall02SessionList" class="col m12 l10 hallSessionList hidden">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.30</span>
+              </div>
+              <div class="description">
+                <h3>Opening remarks</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.45</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Using Emacs after 20 years of Vim</h3>
+                <div class="abstract">
+                  I’ve used Vim almost exclusively for almost 20 years then I’ve started to use Emacs, why?
+                  What’s the difference between the two?
+                  Are they still relevant in 2016 or they are just relics of the past?
+                  I will answer those question with my keyboard and practical examples, showing how I use Emacs
+                  to program in different programming languages and how it can be used as an universal interface
+                  for almost everything.
+                  In the end you will know why those relics are still around after 40 years and why they are not going anywhere.
+                  Be careful: this talk could seriously harm the relationship between you and your favourite IDE!
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/lana.jpg" alt="Gabriele Lana" />
+                <div class="speaker-name-surname">Gabriele Lana</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">10.30</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">11.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Manage your virtual datacenter with oVirt APIs and Python</h3>
+                <div class="abstract">
+                  <div>
+                    oVirt is a virtualization platform with an easy-to-use web interface.
+                    It manages virtual machines, storage and virtualized networks and makes KVM (Kernel-based Virtual Machine)
+                    a viable feature-rich, enterprise-class virtualization alternative.
+                    oVirt provides a set of REST APIs for:
+                  </div>
+                  <div>
+                    <ul>
+                      <li>Infrastructure configuration</li>
+                      <li>Host configuration and management</li>
+                      <li>Network and storage configuration</li>
+                      <li>Virtual machine (VM) configuration and management</li>
+                      <li>Networking for the Guest, Virtual disks, VM properties</li>
+                      <li>User management</li>
+                      <li>Daily maintenance and VM lifecycle management</li>
+                    </ul>
+                  </div>
+                  <div>
+                    The APIs can be used:
+                  </div>
+                  <div>
+                    <ul>
+                      <li>As way to integrate with other software used in the organization</li>
+                      <li>For automation of tasks (provisioning and management Software development)</li>
+                      <li>For scripting and utilities</li>
+                    </ul>
+                  </div>
+                  <div>
+                    More over, this could be integrated with other tools like cloud-init or Ansible
+                    to configure you specific VMs and build your open infrastructure as code stack.
+                    The oVirt REST APIs can be directly accessed (RSDL is also available) and
+                    Java, Python and Ruby SDK are also available.
+                    In this session we'll see:
+                  </div>
+                  <div>
+                    <ul>
+                      <li>how to access oVirt with the python SDK</li>
+                      <li>how to dynamically create and start a new VM on an oVirt infrastructure from our code checking capabilities and available resources</li>
+                      <li>how to initially configure the new VM via cloudInit</li>
+                      <li>how to manage it with Ansible</li>
+                    </ul>
+                  </div>
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/tiraboschi.jpg" alt="Simone Tiraboschi" />
+                <div class="speaker-name-surname">Simone Tiraboschi</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">12.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Funny Code</h3>
+                <div class="abstract">
+                  We'll start refactoring a bit of imperative JavaScript composed by common programming language constructs
+                  such as data structures, conditionals and loops, to make it declarative and composed only by functions
+                  as the fundamental building block of computation.
+                  During the journey we will explore some interesting topics like combinatory logic,
+                  tail-call optimization and good design principles.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" />
+                <div class="speaker-name-surname">Matteo Baglini</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-cutlery"></i>
+                <span class="time">12.45</span>
+              </div>
+              <div class="description">
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">14.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Hypermedia games</h3>
+                <div class="abstract">
+                  As the Web has shown, hypermedia messages over HTTP are an elegant and flexible way of building applications.
+                  The HTTP infrastructure simplifies your application protocol and gives you caching and scalability
+                  essentially for free.
+                  Hypermedia messages give dynamic control over the application state transitions,
+                  allowing to grow applications and change things around without breaking clients.
+                  These are terrific properties!
+                  In this talk, I'll put these claims to the test as we play, dissecting and extending an old-school
+                  text adventure game implemented using nothing but HTTP and hypermedia.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/host.jpg" alt="Einar Høst" />
+                <div class="speaker-name-surname">Einar Høst</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">15.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Create Docker from scratch with Golang and bashism</h3>
+                <div class="abstract">
+                  Discover the features provided by the Linux kernel and exploited by Docker to create his empire.
+                  We will write a bunch of GoLang code, showing how easy is to isolate users, control processes and
+                  manage filesystem branches by using CGroups and namespaces.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/dedonato.jpg" alt="Giulio De Donato" />
+                <div class="speaker-name-surname">Giulio De Donato</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">15.45</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">16.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Profiling and debugging with NodeJS</h3>
+                <div class="abstract">
+                  Profiling and debugging are hard activities in general, since they are related with the
+                  dynamic behaviour of applications.
+                  In NodeJS, due to his asynchronous and event-driven nature, this can be even harder.
+                  In this session we will see the most effective options for debugging and profiling NodeJS applications,
+                  identifying bottlenecks and memory leaks and showing GC activity and CPU usage flame graphs.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/piraccini.jpg" alt="Marco Piraccini" />
+                <div class="speaker-name-surname">Marco Piraccini</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">17.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Kata in Bash</h3>
+                <div class="abstract">
+                  Developing a Bash script incrementally, performing automated tests without using any framework:
+                  during this session a mini-framework will be developed from scratch using only out-of-the-box
+                  system features and tools.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/francia.jpg" alt="Andrea Francia" />
+                <div class="speaker-name-surname">Andrea Francia</div>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">18.00</span>
+              </div>
+              <div class="description">
+                <h3>Closing remarks</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -190,16 +615,308 @@
 
     <div class="container">
       <div class="section">
-        <div class="row center">
-          <div class="col s12 m4 offset-m4 text">
-            <p>
-              <b class="red-text">The CFP closes on 30 September 2016</b>
-            </p>
-            <p>
-              No matter what tool or device you are using, just
-              send your proposal to <b><a class="blue-text" href="mailto:thewildbunch@noslidesconf.net">the wild bunch</a></b>
-              and amaze everybody with your hands-on session!
-            </p>
+        <div class="row speakers">
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/baglini.jpg" alt="">
+              <div class="details">
+                <p>
+                  Developer, speaker, coach, community founder and conference organizer, Matteo has a
+                  strong focus on simplicity, clean code, design and software architecture as means
+                  to create codebases that better adapt to the ever evolving business world. 
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/matteobaglini"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/matteobaglini"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Matteo Baglini</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/dedonato.jpg" alt="">
+              <div class="details">
+                <p>
+                  Docker advocate at XPeppers, Liuggio is a passionate open source developer
+                  expert in e-commerce platforms and microservices and actively involved in
+                  the PHP and Golang communities.
+                  A library he created is used by Wikipedia and his Composer badges are used
+                  by most PHP GitHub repositories.
+                  He is an evangelist of good design, code quality and DevOps practices.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/liuggio"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/giuliodedonato"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Giulio De Donato</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/dellaquila.jpg" alt="Luigi Dell'Aquila">
+              <div class="details">
+                <p>
+                  Core developer and director of consulting at OrientDB. OpenSource enthusiast.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/ldellaquila"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/luigidellaquila"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Luigi Dell'Aquila</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/francia.jpg" alt="">
+              <div class="details">
+                <p>
+                  Test-driven development practitioner and mentor
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/andreafrancia"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/andreafrancia"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Andrea Francia</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/fusinska.jpg" alt="">
+              <div class="details">
+                <p>
+                  Barbara is a Data Solution Architect with strong software development background.
+                  While working with a variety of different companies, she gained experience in building
+                  diverse software systems.
+                  This experience brought her focus to the Data Science and Big Data field.
+                  She believes in the importance of the data and metrics when growing a successful business.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/basiafusinska"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/barbarafusinska"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Barbara Fusinska</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/host.jpg" alt="">
+              <div class="details">
+                <p>
+                  Einar W. Høst is an unapologetic ivory tower zealot who programs computers at NRK,
+                  the Norwegian public broadcaster. 
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/einarwh"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/einarwh"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Einar Høst</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/lana.jpg" alt="">
+              <div class="details">
+                <p>
+                  Software craftsman, clean code disciple, Elixir/Erlang, Elm, Ruby, Rust,
+                  quantified self geek, 18 years on the field and still love it.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/gabrielelana"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/gabrielelana"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Gabriele Lana</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/leopardi.jpg" alt="">
+              <div class="details">
+                <p>
+                  Andrea is a programming enthusiast that loves learning new stuff.
+                  He works as a backend developer and is a member of the Elixir core team.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/whatyouhide"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/anleopardi"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Andrea Leopardi</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/liu.jpg" alt="">
+              <div class="details">
+                <p>
+                  Ju started messing up with computers late in his life, but hasn't stopped yet.
+                  He got a Computer Science degree, then joined weLaika, a Turin Ruby on Rails company, and
+                  after some time, moved to London, where he joined AlphaSights as a Ruby engineer.
+                  He loves Ruby, likes Javascript and is curious about functional programming.
+                  He's a Git user, Vim addict and TDD believer.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/arkh4m"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/juliu"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Ju Liu</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/perrotta.jpg" alt="Paolo Perrotta">
+              <div class="details">
+                <p>
+                  After conquering the rebellious tentacles of Proxima Centauri,
+                  Nusco was elected supreme emperor of the milky way.
+                  Since then, he's been ruling the galaxy with equanimous magnanimity.
+                  He also does software.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/nusco"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/paoloperrotta"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Paolo Perrotta</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/pilato.jpg" alt="">
+              <div class="details">
+                <p>
+                  Developer, evangelist at Elastic and creator of the Elastic French Speakers User Group.
+                  Frequent speaker about all things Elastic, in conferences, for user groups and in companies with BBL talks.
+                  In my free time, I enjoy coding and DJ four times per year, just for fun.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/dadoonet"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/dadoonet"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>David Pilato</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/piraccini.jpg" alt="">
+              <div class="details">
+                <p>
+                  Marco Piraccini is a freelance consultant and software architect,
+                  but mainly concentrates on developing code.
+                  He is an advocate of Linux, open source software and other knowledge-sharing platforms.
+                  He is a recent convert to JavaScript and now spends most of his time developing in NodeJS.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/marcopiraccini"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/marcopiraccini"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Marco Piraccini</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/reinartz.jpg" alt="">
+              <div class="details">
+                <p>
+                  Front-end developer and teamlead UI/UX at Trivago.
+                  Christoph is working on scaling and improving the UI of Trivago products
+                  on a large scale since more than 4 years now.
+                  He worked in several agencies before.
+                  Christoph puts all his passion into making user interfaces and front-ends more consistent,
+                  accessible, performant and scalable.
+                  He likes an up-trending CSS specificity graph.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/pistenprinz"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/christoph-reinartz-57b10b73"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Christoph Reinartz</h4>
+            </div>
+          </div>
+          <div class="col s12 m8 offset-m2 l6 speaker">
+            <div class="picture">
+              <img src="assets/img/speakers/tiraboschi.jpg" alt="">
+              <div class="details">
+                <p>
+                  Simone Tiraboschi Simone, Senior Software Engineer at Red Hat, is working
+                  in the RHEV integration team and on the oVirt project.
+                  Simone is the maintainer of hosted-engine-setup: a tool that let the user
+                  simply bootstrap an environment where the oVirt engine is running inside
+                  a VM hosted in HA fashion on the host it's managing.
+                </p>
+                <div class="social">
+                  <ul>
+                    <li><a href="http://twitter.com/tiraboschis"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="http://www.linkedin.com/in/tiraboschi"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="caption center">
+              <h4>Simone Tiraboschi</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -270,9 +987,14 @@
                 <img src="assets/img/sponsors/coderstug.png" title="Coders TUG" alt="Coders TUG">
               </a>
             </li>
-            <li class="sponsor diamond">
+            <li class="sponsor taaffeite">
               <a href="http://www.t3lab.it" target="_blank">
                 <img src="assets/img/sponsors/t3lab.png" title="T3LAB" alt="T3LAB">
+              </a>
+            </li>
+            <li class="sponsor diamond">
+              <a href="http://www.balsamiq.com" target="_blank">
+                <img src="assets/img/sponsors/balsamiq.png" title="Balsamiq" alt="Balsamiq">
               </a>
             </li>
             <li class="sponsor sapphire">
@@ -305,6 +1027,31 @@
                 <img src="assets/img/sponsors/intre.png" title="Intré" alt="Intré">
               </a>
             </li>
+            <li class="sponsor sapphire">
+              <a href="http://www.footballaddicts.com" target="_blank">
+                <img src="assets/img/sponsors/footballaddicts.png" title="Football Addicts" alt="Football Addicts">
+              </a>
+            </li>
+            <li class="sponsor sapphire">
+              <a href="http://www.nrk.no" target="_blank">
+                <img src="assets/img/sponsors/nrk.png" title="NRK" alt="NRK">
+              </a>
+            </li>
+            <li class="sponsor sapphire">
+              <a href="http://orientdb.com" target="_blank">
+                <img src="assets/img/sponsors/orientdb.png" title="OrientDB" alt="OrientDB">
+              </a>
+            </li>
+            <li class="sponsor sapphire">
+              <a href="http://www.redhat.com" target="_blank">
+                <img src="assets/img/sponsors/redhat.png" title="RedHat" alt="RedHat">
+              </a>
+            </li>
+            <li class="sponsor sapphire">
+              <a href="http://www.trivago.com" target="_blank">
+                <img src="assets/img/sponsors/trivago.png" title="Trivago" alt="Trivago">
+              </a>
+            </li>
             <li class="sponsor amethyst">
               <a href="http://www.italiancpp.org" target="_blank">
                 <img src="assets/img/sponsors/italiancpp.png" title="Italian C++" alt="Italian C++">
@@ -314,7 +1061,7 @@
               <a href="https://www.jetbrains.com" target="_blank">
                 <img src="assets/img/sponsors/jetbrains.png" title="JetBrains" alt="JetBrains">
               </a>
-            </li
+            </li>
           </ul>
         </div>
         <div class="row">
@@ -531,19 +1278,11 @@
               <div class="row">
                 <h4>Staff</h4>
                 <div class="text">
-                  <p>This event is organized by a wild bunch of people tired of conferences entirely based on slides and buzzwords</p>
                   <p>
-                    <div>Their true identity will be revealed sooner or later</div>
-                    <div>In the meanwhile you can send them an e-mail:</div>
-                  </p>
-                  <p>
-                    <div><a class="blue-text text-lighten-2" href="mailto:angel@noslidesconf.net">Angel</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:pike@noslidesconf.net">Pike Bishop</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:dutch@noslidesconf.net">Dutch Engstrom</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:tectorgorch@noslidesconf.net">Tector Gorch</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:genmapache@noslidesconf.net">General Mapache</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:sykes@noslidesconf.net">Freddie Sykes</a></div>
-                    <div><a class="blue-text text-lighten-2" href="mailto:thornton@noslidesconf.net">Deke Thornton</a></div>
+                    This event is organized by a wild bunch of people tired of slideware/buzzwords-driven conferences
+                    <br />
+                    Should you need any information, please do not hesitate to contact them
+                    <a class="blue-text text-lighten-2" href="mailto:thewildbunch@noslidesconf.net">via e-mail</a>
                   </p>
                 </div>
               </div>
@@ -568,10 +1307,11 @@
 
     <div id="js">
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkHHdfju4OviCVhTwXe6m3kV5ppcAY6Wk"></script>
+      <script type="text/javascript" src="https://use.fontawesome.com/fa1fe610a3.js"></script>
       <script type="text/javascript" src="assets/js/materialize.js"></script>
-      <script type="text/javascript" src="assets/js/init.js"></script>
       <script type="text/javascript" src="assets/js/timeline.js"></script>
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkHHdfju4OviCVhTwXe6m3kV5ppcAY6Wk"></script>
+      <script type="text/javascript" src="assets/js/init.js"></script>
       <script type="text/javascript">
         (function (i, s, o, g, r, a, m) {
           i['GoogleAnalyticsObject'] = r;
@@ -584,7 +1324,6 @@
         ga('create', 'UA-79682947-1', 'auto');
         ga('send', 'pageview');
       </script>
-      <script type="text/javascript" src="https://use.fontawesome.com/fa1fe610a3.js"></script>
     </div>
   </body>
 </html>
