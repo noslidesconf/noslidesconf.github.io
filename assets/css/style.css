@@ -253,6 +253,7 @@ span.fa {
   display: table-cell;
   vertical-align: middle;
   background: #f0eff0;
+  position: relative;
 }
 
 .session .description h3 {
@@ -303,6 +304,17 @@ span.fa {
 
 .session .description .speaker-name-surname {
   font-size: 14px;
+}
+
+.session .description .links {
+  position: absolute;
+  bottom: 43px;
+  right: 10px;
+}
+
+.session .description .links .fa {
+  font-size: 45px;
+  color: rgba(20, 125, 180, 0.8);
 }
 
 .speakers {
