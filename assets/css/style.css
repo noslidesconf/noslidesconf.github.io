@@ -126,6 +126,11 @@ footer.page-footer {
   text-decoration: none;
 }
 
+#banner .social > li.lanyrd {
+  top: -32px;
+  position: relative;
+}
+
 span.fa {
   display: inline-block;
   font-size: 35px;
@@ -135,18 +140,17 @@ span.fa {
 .evtsiteico:hover {
   display: inline-block;
   width: 32.5px;
-  height: 35px;
+  height: 47px;
   background-repeat: no-repeat;
-  overflow: hidden;
-  background-size: 25px;
+  background-size: 28px;
   background-position: 0 10px;
 }
 
-.evtsiteico.lanyrd {
+.lanyrd .evtsiteico {
   background-image: url('../img/misc/lanyrd-white.png');
 }
 
-.evtsiteico.lanyrd:hover {
+.lanyrd .evtsiteico:hover {
   background-image: url('../img/misc/lanyrd-blue.png');
 }
 
