@@ -511,7 +511,7 @@ span.fa {
 
 .sponsorship-logos .sponsor.advertiser_:after,
 .sponsorship-packages .sponsor.advertiser_:before {
-  content: "ADVERTISER SPONSOR";
+  content: "ADVERTISER";
   background: #9C8AA5;
 }
 
