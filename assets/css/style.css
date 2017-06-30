@@ -473,6 +473,12 @@ span.fa {
   background: #995588;
 }
 
+.sponsorship-logos .sponsor.organizer:after,
+.sponsorship-packages .sponsor.organizer:before {
+  content: "ORGANIZER";
+  background: #995588;
+}
+
 .sponsorship-logos .sponsor.diamond:after,
 .sponsorship-packages .sponsor.diamond:before {
   content: "DIAMOND SPONSOR";
@@ -503,8 +509,14 @@ span.fa {
   background: #9C8AA5;
 }
 
+.sponsorship-logos .sponsor.advertiser_:after,
+.sponsorship-packages .sponsor.advertiser_:before {
+  content: "ADVERTISER SPONSOR";
+  background: #9C8AA5;
+}
+
 .sponsorship-packages .sponsor .details {
-  position: relative;   
+  position: relative;
   background: #f0eff0;
   border: 1px solid gray;
   border-radius: 3px;
