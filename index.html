@@ -64,8 +64,8 @@
           </a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li> -->
+            <li><a href="#schedule">Schedule</a></li>
+            <!-- <li><a href="#speakers">Speakers</a></li> -->
             <li><a href="#tickets">Tickets</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#venue">Venue</a></li>
@@ -74,8 +74,8 @@
           </ul>
           <ul id="nav-mobile" class="side-nav">
             <li><a href="index.html">Home</a></li>
-            <!-- <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#speakers">Speakers</a></li> -->
+            <li><a href="#schedule">Schedule</a></li>
+            <!-- <li><a href="#speakers">Speakers</a></li> -->
             <li><a href="#tickets">Tickets</a></li>
             <li><a href="#sponsors">Sponsors</a></li>
             <li><a href="#venue">Venue</a></li>
@@ -149,9 +149,482 @@
             <!-- <p>
               Call for sessions is officially opened: if you are interested and you want to propose a talk (italian or english languages) please send an email to <a href="mailto:thewildbunch@noslidesconf.net">thewildbunch@noslidesconf.net</a> by 15 September, 24:00 CET.
             </p> -->
-            <p>
+            <!-- <p>
               <u><b>Call for sessions is officially closed: the full schedule will be available soon.</b></u>
-            </p>
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="parallax-container valign-wrapper" id="schedule">
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 center">
+              <h2>
+                <div><i class="material-icons">today</i></div>
+                <div>Schedule</div>
+                <div><a href="assets/schedule.pdf"><i class="fa fa-download small"></i></a></div>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="parallax"><img src="assets/img/backgrounds/schedule.jpg" alt="Schedule background"></div>
+    </div>
+
+    <div class="container">
+      <div class="section">
+        <div id="halls" class="row">
+          <div class="col s6 hall-wrapper">
+            <div class="hall selected" data-session-list-selector="#hall01SessionList">
+              <h4>Starbuck hall</h4>
+            </div>
+          </div>
+          <div class="col s6 hall-wrapper">
+            <div class="hall" data-session-list-selector="#hall02SessionList">
+              <h4>AguaVerde hall</h4>
+            </div>
+          </div>
+        </div>
+        <div id="hallSessionLists" class="row">
+          <div id="hall01SessionList" class="col m12 l10 hallSessionList">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.30</span>
+              </div>
+              <div class="description">
+                <h3>Opening remarks</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.45</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Alexa, start the presentation</h3>
+                <div class="abstract">
+                  This session will show you how to build Alexa skill from scratch and deploy it to AWS Lambda;
+                  from skill setup, to the code and manually built analytics.<br/>
+                  Alexa, along with other voice assistants, is becoming more and more popular, and the number of skills is increasing almost
+                  exponentially.<br />
+                  Platform itself is growing but you can already build useful skills, either for your business or just for fun.<br /><br />
+                  This talk will show you:
+                  <ul>
+                    <li>How to setup Alexa skill</li>
+                    <li>How to define intents and slots</li>
+                    <li>How to deploy the skill to AWS</li>
+                    <li>How to test the skill</li>
+                    <li>How to debug skill</li>
+                    <li>What are the limitations of Alexa platform at the moment</li>
+                    <li>And finally how to create simple analytics for your skills</li>
+                  </ul>
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/reinartz.jpg" alt="Christoph Reinartz" /> -->
+                <div class="speaker-name-surname">Slobodan Stojanovic</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-video">
+                    <a href="http://youtu.be/-4Sy-uYU_i8?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">10.30</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">11.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Where did my messages go? Tracing distributed systems with OpenTracing</h3>
+                <div class="abstract">
+                  Having the ability to know where and when each message has been sent or received between your systems
+                  is becoming even more relevant today, where distributing components, like microservices, are becoming the
+                  defacto architecture in enterprises trying to develop distributed systems that scale.<br />
+                  Even when you have metrics and logging tools implemented, that’s not enough to recreate the
+                  journey of each transaction and how they propagate between components
+                  <a href="https://medium.com/opentracing/towards-turnkey-distributed-tracing-5f4297d1736" target="_blank">[1]</a>.<br />
+                  Tracing messages between distributed systems gives visibility over communication and performance per
+                  transaction received from a client, and how this propagates between different components around your systems.<br />
+                  Opentracing is an API that is aimed to standardize how systems can implement distributed tracing. <br/>
+                  So, from the client (e.g. mobile, web), to the proxy, APIs, and backend systems (i.e. databases and messaging systems)
+                  mark how long it takes to communicate with each component.<br />
+                  This presentation will show how to instrument your Java applications with OpenTracing to be able to trace messages
+                  from web/mobile clients to your services and back to your data systems, and in this way, how to visualize,
+                  transaction per transaction, how your messages flows using a couple of the OpenTracing tools available,
+                  Uber's Jaeger <a href="https://uber.github.io/jaeger/" target="_blank">[2]</a>
+                  and Zipkin <a href="http://zipkin.io" target="_blank">[3]</a> .
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/pilato.jpg" alt="David Pilato" /> -->
+                <div class="speaker-name-surname">Jorge Esteban Quilcate Otoya</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/dadoonet/legacy-search" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/4VnmamXt3as?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">12.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Functional Refactoring</h3>
+                <div class="abstract">
+                  Coming soon...
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" />
+                <div class="speaker-name-surname">Matteo Baglini</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/matteobaglini/funny-code" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="https://youtu.be/KlgyViAbU4k?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-cutlery"></i>
+                <span class="time">12.45</span>
+              </div>
+              <div class="description">
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">14.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Live coding a Mondrian art generator in Elm</h3>
+                <div class="abstract">
+                  In this talk we will use the amazing powers of the Elm ecosystem to build a Mondrian art generator.<br />
+                  We will spend some time looking at Mondrian pieces to get a better idea of the pieces we want our program to create.<br />
+                  Then we will use the provided command line tools to start a project from scratch. <br />
+                  We will introduce some basic concepts of Elm and start composing our application. <br />
+                  A word of warning for the backend developers: even the CSS will be live coded, so come prepared.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/liu.jpg" alt="Ju Liu" />
+                <div class="speaker-name-surname">Ju Liu</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/Arkham/jack-dies" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/YhZXU5zUnO0?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">15.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">The gigant mood-o-meter</h3>
+                <div class="abstract">
+                  Coming soon...
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/leopardi.jpg" alt="Andrea Leopardi" /> -->
+                <div class="speaker-name-surname">Samuele Reghenzi</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/whatyouhide/pass_the_chain" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/lYQ3WwCMTJI?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">15.45</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">16.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Adding Effortless to Serverless</h3>
+                <div class="abstract">
+                  Kick the new serverless buzzword hype and learn how to create and deploy a new serverless API in 10 minutes
+                  with AWS Lambda, API Gateway and Claudia.js.<br />
+                  There are lots of talks about serverless these days, but how can you avoid all that mystery and try it for yourself
+                  without reading many tutorials, documentation and watching lots of presentations?<br />
+                  This NoSlides talk will show you how to create your first serverless API in 10 minutes and then deploy it to
+                  AWS in seconds with Claudia.js. <br />
+                  Along the way, will also show why you don’t have to worry about scaling any more, how to structure your serverless APIs,
+                  separate your services, debug and where should you or should not use serverless, all in code.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/liu.jpg" alt="Ju Liu" /> -->
+                <div class="speaker-name-surname">Aleksandar Simovic</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/Arkham/jack-dies" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/YhZXU5zUnO0?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">17.00</span>
+              </div>
+              <div class="description">
+                <h3>Closing remarks</h3>
+              </div>
+            </div>
+          </div>
+          <div id="hall02SessionList" class="col m12 l10 hallSessionList hidden">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.30</span>
+              </div>
+              <div class="description">
+                <h3>Opening remarks</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">09.45</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Competitive Programming for fun and self-improvement</h3>
+                <div class="abstract">
+                  Some years ago I started facing with programming problems on Competitive
+                  Programming websites, partly for fun, partly because I felt like experimenting
+                  something new. <br/>
+                  I gradually got more and more committed and I quickly ended up solving a couple of
+                  exercises per day. <br />
+                  After some time I noticed several benefits: I was quicker at recognizing coding
+                  patterns, I discovered new kind of questions to reason about when dealing with
+                  a problem, I tried to go beyond the first solution that worked. <br />
+                  My professional alter ego was positively influenced as well. <br />
+                  Two years ago I decided to share this experience with the Community.
+                  I shaped an original meetup format called "Coding Gym", open to all programming
+                  languages and that I monthly organize in Modena. <br />
+                  I would like to tell you more about this story by solving some interesting
+                  programming challenges from the past coding gyms. <br />
+                  Although I will mostly code in C++ - using idioms and gems from the standard
+                  library - my focus is to show you why any professional developer can benefit
+                  from practicing competitive programming.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/gpad.jpg" alt="Gianluca Padovani" /> -->
+                <div class="speaker-name-surname">Marco Arena</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/gpad/no_slides" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="https://youtu.be/XcDgh2_nLgU?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">10.30</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">11.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">A Bite of Rust</h3>
+                <div class="abstract">
+                  We'll meet Rust Language by a live coding session on "String Calculator Kata".<br />
+                  Rust is a Safe and Fast system language, but there is a price to pay for being
+                  both of them. <br />
+                  Thanks to this classic TDD Kata we'll be able to explore some syntax language
+                  aspects and introduce some brand new Rust concepts as ownership, borrowing and
+                  lifetime.<br />
+                  The goal of this talk isn't to teach you Rust but to show you some of the concepts
+                  that make it so unique. <br />
+                  It'll be a short but intense session that'll give you the chance to taste
+                  "A Bite of Rust"!
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/tiraboschi.jpg" alt="Simone Tiraboschi" /> -->
+                <div class="speaker-name-surname">Michele D'Amico</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-video">
+                    <a href="https://youtu.be/v2jKubXp4fc?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">12.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Introduction to type driven development in Idris</h3>
+                <div class="abstract">
+                  Types are a precious instrument to document our code and to catch errors at compile time, but they could be much more.<br />
+                  What if we could use types to drive our design process, to model precisely our domain and continuously receive feedback on
+                  it while we produce code? What if we could not only use types to find errors but also to actually prove the absence of errors?<br />
+                  If we introduce types as a first-class language construct, all of this, and much more, becomes possible.<br />
+                  In this talk we will see how to bring into play the full power of types using Idris, a purely functional
+                  programming language with dependent types, letting the types guide the development and being assisted by the compiler itself.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" /> -->
+                <div class="speaker-name-surname">Marco Perone</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/matteobaglini/funny-code" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="https://youtu.be/KlgyViAbU4k?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-cutlery"></i>
+                <span class="time">12.45</span>
+              </div>
+              <div class="description">
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">14.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Internal DSL design in Scala</h3>
+                <div class="abstract">
+                  A domain-specific language (DSL) is a language that you design with a specific domain in mind.<br />
+                  There are two types of domain-specific languages (DSLs): external and internal.<br />
+                  The former implicates — in the simplest case — parsing a string into the programming language syntax.
+                  The latter, on the other hand, involves implementing a language within your own programming language. <br />
+                  Quoting Martin Fowler, "Internal DSLs are particular ways of using a host language to give the host language the feel of
+                  a particular language".<br />
+                  In this session you'll see how to implement a simple but complete internal DSL in Scala.
+                  You'll see that Scala syntax has some important features that makes it a DSL-friendly language.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/host.jpg" alt="Einar Høst" /> -->
+                <div class="speaker-name-surname">Alessandro Lacava</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/einarwh/hyperwizard" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/PNqC3g3Fk1Q?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">15.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Cooking Akka.Net and ServiceFabric together</h3>
+                <div class="abstract">
+                  Erlang, Elixir, Scala and Akka are the most famous implementations of a
+                  mathematical model born in 1973: the Actor Model. <br />
+                  It's used to build concurrent and distributed applications. <br />
+                  The concept behind an actor fits perfectly into the cloud world too.<br />
+                  Akka.Net and ServiceFabric Reliable Actor are the most known implementations for
+                  .Net platform.<br />
+                  Why do I have to choose? Why can't I use both to gain the better of
+                  two different worlds?
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/dedonato.jpg" alt="Giulio De Donato" /> -->
+                <div class="speaker-name-surname">Alessandro Melchiori</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-video">
+                    <a href="https://youtu.be/uj6xE54BVAc?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-coffee"></i>
+                <span class="time">15.45</span>
+              </div>
+              <div class="description">
+                <h3>Break</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">16.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Creating a small but complete application from scratch using Test-Driven Development (in Ruby)</h3>
+                <div class="abstract">
+                  How should this “TDD” thing really work? <br />
+                  In this session, I will answer this question with a practical example, creating a complete application
+                  from scratch using Test Driven Development.<br />
+                  It will be a complete application with its own data store (on filesytem) and its own user interface (command line)
+                  and it will be all developed from scratch during the session.
+                </div>
+                <img class="speaker-image" src="assets/img/speakers/francia.jpg" alt="Andrea Francia" />
+                <div class="speaker-name-surname">Andrea Francia</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/andreafrancia/kata-bash" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/N8up3OxfnCQ?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">17.00</span>
+              </div>
+              <div class="description">
+                <h3>Closing remarks</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -240,6 +713,11 @@
             <li class="sponsor sapphire">
               <a href="http://doubleloop.io" target="_blank">
                 <img src="assets/img/sponsors/doubleloop.png" title="doubleloop" alt="doubleloop">
+              </a>
+            </li>
+            <li class="sponsor sapphire">
+              <a href="http://www.genesy.it" target="_blank">
+                <img src="assets/img/sponsors/genesy.png" title="genesy" alt="genesy">
               </a>
             </li>
             <li class="sponsor sapphire">
