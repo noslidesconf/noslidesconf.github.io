@@ -105,9 +105,9 @@
           </div>
           <div class="row center">
             <ul class="list-inline social">
-              <li class="lanyrd">
+              <!-- <li class="lanyrd">
                 <a href="http://lanyrd.com/2017/noslides" target="_blank"><span class="evtsiteico">&nbsp;</span></a>
-              </li>
+              </li> -->
               <li>
                 <a href="http://twitter.com/noslidesconf" target="_blank"><span class="fa fa-twitter"></span></a>
               </li>
@@ -165,7 +165,7 @@
               <h2>
                 <div><i class="material-icons">today</i></div>
                 <div>Schedule</div>
-                <div><a href="assets/schedule.pdf"><i class="fa fa-download small"></i></a></div>
+                <!-- <div><a href="assets/schedule.pdf"><i class="fa fa-download small"></i></a></div> -->
               </h2>
             </div>
           </div>
@@ -190,6 +190,15 @@
         </div>
         <div id="hallSessionLists" class="row">
           <div id="hall01SessionList" class="col m12 l10 hallSessionList">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">08.30</span>
+              </div>
+              <div class="description">
+                <h3>Check-in</h3>
+              </div>
+            </div>
             <div class="session">
               <div class="symbol">
                 <i class="fa fa-2x fa-clock-o"></i>
@@ -286,7 +295,9 @@
               <div class="description">
                 <h3 class="language-flag ita">Functional Refactoring</h3>
                 <div class="abstract">
-                  Coming soon...
+                  We start with a snippet of code and a handful of green tests to address a
+                  refactoring journey useful to explore and understand design concepts taken from
+                  the world of functional programming.
                 </div>
                 <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" />
                 <div class="speaker-name-surname">Matteo Baglini</div>
@@ -398,7 +409,35 @@
             <div class="session">
               <div class="symbol">
                 <i class="fa fa-2x fa-clock-o"></i>
-                <span class="time">17.00</span>
+                <span class="time">17.15</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag eng">Create your own DSL in Kotlin</h3>
+                <div class="abstract">
+                  Every API you create is, in fact, a domain-specific language for your business
+                  domain. <br />
+                  Kotlin is a general purpose programming language, but it offers some constructs,
+                  that make creation and usage of embedded DSLs effortless and fun. DSL makes your
+                  code expressive and easy to read. <br />
+                  In this talk, I'll show those language features and guide you through a process of
+                  creation of an internal mini language.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/francia.jpg" alt="Andrea Francia" /> -->
+                <div class="speaker-name-surname">Victor Kropp</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/andreafrancia/kata-bash" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/N8up3OxfnCQ?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">18.00</span>
               </div>
               <div class="description">
                 <h3>Closing remarks</h3>
@@ -406,6 +445,15 @@
             </div>
           </div>
           <div id="hall02SessionList" class="col m12 l10 hallSessionList hidden">
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">08.30</span>
+              </div>
+              <div class="description">
+                <h3>Check-in</h3>
+              </div>
+            </div>
             <div class="session">
               <div class="symbol">
                 <i class="fa fa-2x fa-clock-o"></i>
@@ -468,70 +516,6 @@
                 <span class="time">11.00</span>
               </div>
               <div class="description">
-                <h3 class="language-flag ita">A Bite of Rust</h3>
-                <div class="abstract">
-                  We'll meet Rust Language by a live coding session on "String Calculator Kata".<br />
-                  Rust is a Safe and Fast system language, but there is a price to pay for being
-                  both of them. <br />
-                  Thanks to this classic TDD Kata we'll be able to explore some syntax language
-                  aspects and introduce some brand new Rust concepts as ownership, borrowing and
-                  lifetime.<br />
-                  The goal of this talk isn't to teach you Rust but to show you some of the concepts
-                  that make it so unique. <br />
-                  It'll be a short but intense session that'll give you the chance to taste
-                  "A Bite of Rust"!
-                </div>
-                <!-- <img class="speaker-image" src="assets/img/speakers/tiraboschi.jpg" alt="Simone Tiraboschi" /> -->
-                <div class="speaker-name-surname">Michele D'Amico</div>
-                <!-- <ul class="list-inline links">
-                  <li class="session-video">
-                    <a href="https://youtu.be/v2jKubXp4fc?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
-                  </li>
-                </ul> -->
-              </div>
-            </div>
-            <div class="session">
-              <div class="symbol">
-                <i class="fa fa-2x fa-clock-o"></i>
-                <span class="time">12.00</span>
-              </div>
-              <div class="description">
-                <h3 class="language-flag eng">Introduction to type driven development in Idris</h3>
-                <div class="abstract">
-                  Types are a precious instrument to document our code and to catch errors at compile time, but they could be much more.<br />
-                  What if we could use types to drive our design process, to model precisely our domain and continuously receive feedback on
-                  it while we produce code? What if we could not only use types to find errors but also to actually prove the absence of errors?<br />
-                  If we introduce types as a first-class language construct, all of this, and much more, becomes possible.<br />
-                  In this talk we will see how to bring into play the full power of types using Idris, a purely functional
-                  programming language with dependent types, letting the types guide the development and being assisted by the compiler itself.
-                </div>
-                <!-- <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" /> -->
-                <div class="speaker-name-surname">Marco Perone</div>
-                <!-- <ul class="list-inline links">
-                  <li class="session-repo">
-                    <a href="http://github.com/matteobaglini/funny-code" target="_blank"><span class="fa fa-github"></span></a>
-                  </li>
-                  <li class="session-video">
-                    <a href="https://youtu.be/KlgyViAbU4k?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
-                  </li>
-                </ul> -->
-              </div>
-            </div>
-            <div class="session">
-              <div class="symbol">
-                <i class="fa fa-2x fa-cutlery"></i>
-                <span class="time">12.45</span>
-              </div>
-              <div class="description">
-                <h3>Lunch</h3>
-              </div>
-            </div>
-            <div class="session">
-              <div class="symbol">
-                <i class="fa fa-2x fa-clock-o"></i>
-                <span class="time">14.00</span>
-              </div>
-              <div class="description">
                 <h3 class="language-flag ita">Internal DSL design in Scala</h3>
                 <div class="abstract">
                   A domain-specific language (DSL) is a language that you design with a specific domain in mind.<br />
@@ -551,6 +535,65 @@
                   </li>
                   <li class="session-video">
                     <a href="http://youtu.be/PNqC3g3Fk1Q?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">12.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">Coming soon...</h3>
+                <div class="abstract">
+
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/francia.jpg" alt="Andrea Francia" /> -->
+                <div class="speaker-name-surname"></div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/andreafrancia/kata-bash" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="http://youtu.be/N8up3OxfnCQ?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-cutlery"></i>
+                <span class="time">12.45</span>
+              </div>
+              <div class="description">
+                <h3>Lunch</h3>
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">14.00</span>
+              </div>
+              <div class="description">
+                <h3 class="language-flag ita">A Bite of Rust</h3>
+                <div class="abstract">
+                  We'll meet Rust Language by a live coding session on "String Calculator Kata".<br />
+                  Rust is a Safe and Fast system language, but there is a price to pay for being
+                  both of them. <br />
+                  Thanks to this classic TDD Kata we'll be able to explore some syntax language
+                  aspects and introduce some brand new Rust concepts as ownership, borrowing and
+                  lifetime.<br />
+                  The goal of this talk isn't to teach you Rust but to show you some of the concepts
+                  that make it so unique. <br />
+                  It'll be a short but intense session that'll give you the chance to taste
+                  "A Bite of Rust"!
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/tiraboschi.jpg" alt="Simone Tiraboschi" /> -->
+                <div class="speaker-name-surname">Michele D'Amico</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-video">
+                    <a href="https://youtu.be/v2jKubXp4fc?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
                   </li>
                 </ul> -->
               </div>
@@ -596,6 +639,33 @@
                 <span class="time">16.15</span>
               </div>
               <div class="description">
+                <h3 class="language-flag ita">Introduction to type driven development in Idris</h3>
+                <div class="abstract">
+                  Types are a precious instrument to document our code and to catch errors at compile time, but they could be much more.<br />
+                  What if we could use types to drive our design process, to model precisely our domain and continuously receive feedback on
+                  it while we produce code? What if we could not only use types to find errors but also to actually prove the absence of errors?<br />
+                  If we introduce types as a first-class language construct, all of this, and much more, becomes possible.<br />
+                  In this talk we will see how to bring into play the full power of types using Idris, a purely functional
+                  programming language with dependent types, letting the types guide the development and being assisted by the compiler itself.
+                </div>
+                <!-- <img class="speaker-image" src="assets/img/speakers/baglini.jpg" alt="Matteo Baglini" /> -->
+                <div class="speaker-name-surname">Marco Perone</div>
+                <!-- <ul class="list-inline links">
+                  <li class="session-repo">
+                    <a href="http://github.com/matteobaglini/funny-code" target="_blank"><span class="fa fa-github"></span></a>
+                  </li>
+                  <li class="session-video">
+                    <a href="https://youtu.be/KlgyViAbU4k?t=00m01s" target="_blank"><span class="fa fa-youtube"></span></a>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="session">
+              <div class="symbol">
+                <i class="fa fa-2x fa-clock-o"></i>
+                <span class="time">17.15</span>
+              </div>
+              <div class="description">
                 <h3 class="language-flag ita">Creating a small but complete application from scratch using Test-Driven Development (in Ruby)</h3>
                 <div class="abstract">
                   How should this “TDD” thing really work? <br />
@@ -619,7 +689,7 @@
             <div class="session">
               <div class="symbol">
                 <i class="fa fa-2x fa-clock-o"></i>
-                <span class="time">17.00</span>
+                <span class="time">18.00</span>
               </div>
               <div class="description">
                 <h3>Closing remarks</h3>
@@ -696,8 +766,8 @@
               </a>
             </li>
             <li class="sponsor emerald">
-              <a href="http://codiceplastico.com" target="_blank">
-                <img src="assets/img/sponsors/codiceplastico.png" title="Codice Plastico" alt="Codice Plastico">
+              <a href="http://www.avanscoperta.it" target="_blank">
+                <img src="assets/img/sponsors/avanscoperta.png" title="Avanscoperta" alt="Avanscoperta">
               </a>
             </li>
             <li class="sponsor emerald">
@@ -706,8 +776,13 @@
               </a>
             </li>
             <li class="sponsor emerald">
-              <a href="http://www.avanscoperta.it" target="_blank">
-                <img src="assets/img/sponsors/avanscoperta.png" title="Avanscoperta" alt="Avanscoperta">
+              <a href="http://codiceplastico.com" target="_blank">
+                <img src="assets/img/sponsors/codiceplastico.png" title="Codice Plastico" alt="Codice Plastico">
+              </a>
+            </li>
+            <li class="sponsor emerald">
+              <a href="http://www.jetbrains.com" target="_blank">
+                <img src="assets/img/sponsors/jetbrains.png" title="JetBrains" alt="JetBrains">
               </a>
             </li>
             <li class="sponsor sapphire">
@@ -723,11 +798,6 @@
             <li class="sponsor sapphire">
               <a href="http://www.gruppometa.it" target="_blank">
                 <img src="assets/img/sponsors/gruppometa.png" title="Gruppo Meta" alt="Gruppo Meta">
-              </a>
-            </li>
-            <li class="sponsor sapphire">
-              <a href="http://www.jetbrains.com" target="_blank">
-                <img src="assets/img/sponsors/jetbrains.png" title="JetBrains" alt="JetBrains">
               </a>
             </li>
             <li class="sponsor sapphire">
