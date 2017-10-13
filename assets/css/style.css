@@ -264,20 +264,28 @@ span.fa {
   color: #2090d0
 }
 
-.session .description h3.language-flag:before {
+.session .description h5 {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #2090d0
+}
+
+.session .description h5.language-flag:before {
   content: '';
   display: inline-block;
-  width: 30px;
-  height: 18px;
-  background-size: 30px 18px;
+  width: 20px;
+  height: 12px;
+  background-size: 20px 12px;
   margin-right: 10px;
 }
 
-.session .description h3.language-flag.ita:before {
+.session .description h5.language-flag.ita:before {
   background-image: url(/assets/img/misc/flag-ita.png);
 }
 
-.session .description h3.language-flag.eng:before {
+.session .description h5.language-flag.eng:before {
   background-image: url(/assets/img/misc/flag-eng.png);
 }
 
